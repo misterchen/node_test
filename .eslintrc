@@ -26,7 +26,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true,
   },
   # "parser": "babel-eslint",
   "plugins": [
@@ -119,7 +120,7 @@
     "yoda": [1, "never"],
 
     /* Strict Mode */
-    "strict": [1, "never"],
+    "strict": [0, "never"],
 
     /* Variables */
     "no-catch-shadow": 0,
