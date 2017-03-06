@@ -1,0 +1,11 @@
+elasticsearch:
+    image: elasticsearch:2
+    ports:
+        - "9200:9200"
+    environment:
+        ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+        ES_CLUSTERNAME: _clustername_
+    volumes:
+    - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    - /path/to/storage:/usr/share/elasticsearch/data
+    mem_limit: 1g
